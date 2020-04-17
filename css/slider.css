@@ -1,0 +1,133 @@
+.pogoSlider {
+    height: 100%;
+    padding: 0 !important
+}
+
+.pogoSlider .logo {
+    position: absolute;
+    z-index: 99;
+    padding: 20px 15px;
+}
+
+.pogoSlider-slide {
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .pogoSlider-nav-btn {
+        display: none !important
+    }
+}
+
+.pogoSlider-nav-btn {
+    width: 10px !important;
+    height: 12px !important;
+    box-shadow: none
+}
+
+.slider-content {
+    display: grid;
+    margin-top: 40px;
+}
+
+.slider-content h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 125%;
+    margin: 0
+}
+
+.slider-content p {
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    text-align: justify;
+    line-height: 160%;
+    margin-top: 20px
+}
+
+@media screen and (max-width:1200px) {
+    .pogoSlider-slide {
+        background-size: cover
+    }
+
+    /*.slider-content {
+        margin-top: 70px
+    }*/
+
+    .slider-content h2 {
+        font-size: 30px;
+        color: #fff;
+        /*line-height: 150%;*/
+        margin: 0
+    }
+
+    .slider-content p {
+        font-size: 18px;
+        font-weight: 100;
+        color: #fff;
+        text-align: justify;
+        /*line-height: 180%;*/
+        margin-top: 20px
+    }
+}
+
+@media screen and (max-width:769px) {
+
+    .slider-content {
+        /*padding: 25px;*/
+        margin-top: 15px
+    }
+
+    .slider-content h2 {
+        font-size: 30px;
+        /*font-weight: 100;*/
+        color: #fff;
+        /*line-height: 150%;*/
+        margin: 0
+    }
+
+    .slider-content p {
+        font-size: 16px;
+        font-weight: 100;
+        color: #fff;
+        text-align: justify;
+        /*line-height: 180%;*/
+        margin-top: 20px
+    }
+}
+
+@media screen and (max-width:465px) {
+   
+    .slider-content {
+        /*padding: 25px;*/
+        margin-top: 20px
+    }
+
+    .slider-content h2 {
+        font-size: 30px;
+        /*font-weight: 100;*/
+        color: #fff;
+        /*line-height: 150%;*/
+        margin: 0
+    }
+
+    .slider-content p {
+        font-size: 16px;
+        font-weight: 100;
+        color: #fff;
+        text-align: justify;
+        /*line-height: 180%;*/
+        margin-top: 20px
+    }
+}
+
+
+@media (min-width: 991px) {
+    .pogoSlider .logo {
+        padding: 30px 20px;
+    }
+}

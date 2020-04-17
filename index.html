@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Currencykart</title>
+    <meta charset=UTF-8>
+    <link href=img/logos/logo-shortcut.png rel="shortcut icon">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
+    <link href=css/bootstrap.min.css rel=stylesheet>
+    <link href=css/font-awesome.css rel=stylesheet>
+    <link href=css/icomoon.css rel=stylesheet>
+    <link href=css/pogo-slider.min.css rel=stylesheet>
+    <link href=css/slider.css rel=stylesheet>
+    <link href=css/animate.css rel=stylesheet>
+    <link href=css/owl.carousel.css rel=stylesheet>
+    <link href=css/default.css rel=stylesheet>
+    <link href=css/styles.css rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&amp;subset=latin-ext,vietnamese" rel=stylesheet>
+</head>
+
+<body>
+    <div id=preloader>
+        <div class="row loader">
+            <div class=loader-icon></div>
+        </div>
+    </div>
+    <!-- <div class=pogoSlider id=js-main-slider>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class=pogoSlider-slide style=background-image:url(img/slider/slide-4.jpg) data-d
+        uration=1000 data-transition=fade>
+            <div class=container>
+                <div class=slider-content>
+                    <div class="main-content">
+                        <div class="text">
+                            <h2 class=pogoSlider-slide-element data-delay=500 data-duration=750 data-in=slideDown data-out=slideUp>A cheaper, <span class="highlight">faster</span> way to send money abroad.</h2>
+                            <p class="pogoSlider-slide-element hidde" data-delay=900 data-duration=750 data-in=slideRight data-out=slideUp>Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
+                        </div>
+                        <div>
+                            <div class="form-area" id="formarea">
+                                <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
+                                    <div class="name">
+                                        <div>
+                                            <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="purpose" name="purpose" placeholder="Purpose*" aria-label="purpose" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="currency" name="currency" placeholder="Currency*" aria-label="currency" required="true">
+                                    </div>
+                                    <div>
+                                       <input class="form-control" type="text" id="amount" name="amount" placeholder="Amount*" aria-label="amount" required="true">
+                                    </div>
+                                    <input type="hidden" name="Source" id="source">
+                                    <input type="hidden" name="trans" id="trans">
+                                    <input type="hidden" name="Geo" id="geo">
+                                    <div>
+                                        <button type="submit" class="button">Get Started</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=pogoSlider-slide style=background-image:url(img/slider/slide-3.jpg) data-duration=1000 data-transition=fade>
+            <div class=container>
+                <div class=slider-content>
+                    <div class=row>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <h2 class=pogoSlider-slide-element data-delay=500 data-duration=750 data-in=slideDown data-out=slideUp>Make Business Easy</h2>
+                            <p class=pogoSlider-slide-element data-delay=900 data-duration=750 data-in=slideRight data-out=slideUp>Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="form-area" id="formarea">
+                                <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
+                                    <div class="name">
+                                        <div>
+                                            <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="units" name="units" title="Please enter number of units greater than 0" placeholder="No. of units*" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" aria-label="units" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="budget" name="Budget" title="Please enter budget in dollar($) greater than 0" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" placeholder="Budget*" aria-label="budget" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="comment" name="comment" placeholder="Any other comments" aria-label="comment">
+                                    </div>
+                                    <input type="hidden" name="Source" id="source">
+                                    <input type="hidden" name="trans" id="trans">
+                                    <input type="hidden" name="Geo" id="geo">
+                                    <div>
+                                        <button type="submit" class="button">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=pogoSlider-slide style=background-image:url(img/slider/slide-5.jpg) data-duration=1000 data-transition=fade>
+            <div class=container>
+                <div class=slider-content>
+                    <div class=row>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <h2 class=pogoSlider-slide-element data-delay=500 data-duration=750 data-in=slideDown data-out=slideUp>Courage is grace under pressure</h2>
+                            <p class=pogoSlider-slide-element data-delay=900 data-duration=750 data-in=slideRight data-out=slideUp>Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="form-area" id="formarea">
+                                <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
+                                    <div class="name">
+                                        <div>
+                                            <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="units" name="units" title="Please enter number of units greater than 0" placeholder="No. of units*" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" aria-label="units" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="budget" name="Budget" title="Please enter budget in dollar($) greater than 0" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" placeholder="Budget*" aria-label="budget" required="true">
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" id="comment" name="comment" placeholder="Any other comments" aria-label="comment">
+                                    </div>
+                                    <input type="hidden" name="Source" id="source">
+                                    <input type="hidden" name="trans" id="trans">
+                                    <input type="hidden" name="Geo" id="geo">
+                                    <div>
+                                        <button type="submit" class="button">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="hero-section">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="text-content">
+                    <p class="title">A cheaper, <span class="highlight">faster</span> way to send money abroad.</p>
+                    <p class="desc">Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
+                </div>
+                <div class="form-area" id="formarea">
+                    <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
+                        <div class="name">
+                            <div>
+                                <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
+                            </div>
+                        </div>
+                        <div>
+                            <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" id="purpose" name="purpose" placeholder="Purpose*" aria-label="purpose" required="true">
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" id="currency" name="currency" placeholder="Currency*" aria-label="currency" required="true">
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" id="amount" name="amount" placeholder="Amount*" aria-label="amount" required="true">
+                        </div>
+                        <input type="hidden" name="Source" id="source">
+                        <input type="hidden" name="trans" id="trans">
+                        <input type="hidden" name="Geo" id="geo">
+                        <div>
+                            <button type="submit" class="button">Get Started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class=section-block id=overview>
+        <div class=container>
+            <div class="center-holder section-heading">
+                <h2>Let's make your own Business</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class=row>
+                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=.1s>
+                    <article class="clearfix service-article">
+                        <div class=article-icon><i class=icon-smartphone-10></i></div>
+                        <div class=article-text>
+                            <h3>Mobile friendly</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p><a href=#>Read More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=.3s>
+                    <article class="clearfix service-article">
+                        <div class=article-icon><i class=icon-thinking-head></i></div>
+                        <div class=article-text>
+                            <h3>Dedicated support</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p><a href=#>Read More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=.5s>
+                    <article class="clearfix service-article">
+                        <div class=article-icon><i class=icon-credit-card></i></div>
+                        <div class=article-text>
+                            <h3>Modern design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p><a href=#>Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class=section-block id=services>
+        <div class=container>
+            <div class="center-holder section-heading">
+                <h2>How to send money from <span class="highlight font-bold">INR</span> to <span class="highlight font-bold">USD</span></h2>
+            </div>
+            <div class=row>
+            	
+                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeIn" data-wow-delay=.1s>
+                    <div class=service-block><img alt=service-image src=img/content/services/serv-17.jpg> <div class="clearfix inner-padd">
+                        <div class=service-block-content>
+                            <h4>Business Advisor</h4>
+                            <p>Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class=service-block-icon><a href=#><i class="fa fa-angle-right" aria-hidden=true></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 wow col-md-4 col-sm-4 fadeIn" data-wow-delay=.3s>
+                <div class=service-block><img alt=service-image src=img/content/services/serv-15.jpg> <div class="clearfix inner-padd">
+                    <div class=service-block-content>
+                        <h4>Financial Planing</h4>
+                        <p>Lorem ipsum dolor sit amet.
+                    </div>
+                    <div class=service-block-icon><a href=#><i class="fa fa-angle-right" aria-hidden=true></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 wow col-md-4 col-sm-4 fadeIn" data-wow-delay=.5s>
+            <div class=service-block><img alt=service-image src=img/content/services/serv-11.jpg> <div class="clearfix inner-padd">
+                <div class=service-block-content>
+                    <h4>Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet.
+                </div>
+                <div class=service-block-icon><a href=#><i class="fa fa-angle-right" aria-hidden=true></i></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+     <div class="col-xs-12 wow col-md-4 col-sm-4 fadeIn" data-wow-delay=.1s>
+                    <div class=service-block><img alt=service-image src=img/content/services/serv-17.jpg> <div class="clearfix inner-padd">
+                        <div class=service-block-content>
+                            <h4>Business Advisor</h4>
+                            <p>Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class=service-block-icon><a href=#><i class="fa fa-angle-right" aria-hidden=true></i></a></div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-xs-12 wow col-md-4 col-sm-4 fadeIn" data-wow-delay=.1s>
+                    <div class=service-block><img alt=service-image src=img/content/services/serv-15.jpg> <div class="clearfix inner-padd">
+                        <div class=service-block-content>
+                            <h4>Business Advisor</h4>
+                            <p>Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class=service-block-icon><a href=#><i class="fa fa-angle-right" aria-hidden=true></i></a></div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-xs-12 wow col-md-4 col-sm-4 fadeIn" data-wow-delay=.1s>
+                    <div class=service-block><img alt=service-image src=img/content/services/serv-11.jpg> <div class="clearfix inner-padd">
+                        <div class=service-block-content>
+                            <h4>Business Advisor</h4>
+                            <p>Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class=service-block-icon><a href=#><i class="fa fa-angle-right" aria-hidden=true></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id=features>
+        <div class=section-block-grey>
+            <div class=container>
+                <div class="center-holder section-heading">
+                    <h2>Purpose of Remittance</h2>
+                </div>
+                <div class=row>
+                    <div class="col-xs-12 wow col-md-4 fadeIn col-sm-6" data-wow-delay=.1s>
+                        <div class="clearfix service-box">
+                            <div class=box-icon><i class=icon-price-tag></i></div>
+                            <div class=box-content>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 wow col-md-4 fadeIn col-sm-6" data-wow-delay=.3s>
+                        <div class="clearfix service-box">
+                            <div class=box-icon><i class=icon-taking-notes></i></div>
+                            <div class=box-content>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 wow col-md-4 fadeIn col-sm-6" data-wow-delay=.5s>
+                        <div class="clearfix service-box">
+                            <div class=box-icon><i class=icon-stopwatch-1></i></div>
+                            <div class=box-content>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 wow col-md-4 fadeIn col-sm-6" data-wow-delay=.7s>
+                        <div class="clearfix service-box">
+                            <div class=box-icon><i class=icon-scientist-avatar></i></div>
+                            <div class=box-content>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 wow col-md-4 fadeIn col-sm-6" data-wow-delay=.9s>
+                        <div class="clearfix service-box">
+                            <div class=box-icon><i class=icon-thinking-head></i></div>
+                            <div class=box-content>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 wow col-md-4 fadeIn col-sm-6" data-wow-delay=1.1s>
+                        <div class="clearfix service-box">
+                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-content>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus.
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src=js/jquery.min.js> </script> <script src=js/bootstrap.min.js> </script> <script src=js/jquery.pogo-slider.min.js> </script> <script src=js/pogo-main.js> </script> <script src=js/owl.carousel.js> </script> <script src=js/wow.min.js> </script> <script src=js/jquery.counterup.min.js> </script> <script src=js/waypoints.min.js> </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/tabs.min.js> </script> <script src=js/modernizr.js> </script> <script src=js/map.js> </script> <script src=js/main.js> </script> </body> </html>
