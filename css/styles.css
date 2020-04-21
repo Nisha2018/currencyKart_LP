@@ -19,7 +19,7 @@
     padding: 100px 0;
     background-color: #f9f9f9;
     /*background-color: #0e3f810f;*/
-    background: url(https://currencykart.com/assets/build/img/newHomepage/howitWorkBg.jpg);
+    /*background: url(https://currencykart.com/assets/build/img/newHomepage/howitWorkBg.jpg);*/
 }
 
 .page-title-section,
@@ -718,10 +718,10 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    justify-content: center;
     margin: 15px 0;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
     align-items: center;
     transition: all 0.5s ease-in-out;
 }
@@ -741,12 +741,9 @@
     line-height: 180%
 }
 
-/*.box-icon {
-    float: left;
-    width: 25%;
+.box-icon {
     text-align: center;
-    padding-top: 15px
-}*/
+}
 
 .box-icon i {
     font-size: 38px;
@@ -771,6 +768,7 @@
     color: #18ba60;
     letter-spacing: 1.5px;
     margin: 0;
+    text-align: center;
 }
 
 .service-category-list {
@@ -2206,15 +2204,10 @@ blockquote i {
         margin: auto;
     }
 
-    .service-box {
-        grid-template-columns: auto 1fr;
-        grid-column-gap: 20px;
+    .service-box.wages{
+        height: 204px;
     }
 
-    /*.slider-content .main-content {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 100px;
-    }*/
 }
 
 /* form starting stylings ------------------------------- */
@@ -2344,3 +2337,4 @@ input:focus~.highlight2 {
         background: transparent;
     }
 }
+
