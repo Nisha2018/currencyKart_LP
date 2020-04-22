@@ -219,6 +219,14 @@
                     </form>
                 </div>
             </div>
+            <div class="overlay" id="form-message" style="display: none;">
+                <div class="popupText">
+                    <p class="">Thank you for contacting us. <br> We will get back to you soon</p>
+                    <div class="close">
+                        <a class="close" onclick="popupclose()">×</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class=section-block id=services>
@@ -891,6 +899,126 @@
             </div>
         </div>
     </footer> -->
+
+    <script type="text/javascript">
+    var x = '';
+
+    submit();
+
+    function submit() {
+        let url_string = window.location.href;
+        var url = new URL(url_string);
+        var content = url.searchParams.get("utm_platform");
+        var geo = url.searchParams.get("utm_geo");
+        let element = document.getElementById('form-message');
+        if (window.location.href.includes('?success=true')) {
+            element.style.display = 'grid';
+        }
+        if (content) {
+            let input = document.getElementById('source');
+            input.value = content;
+
+        }
+        if (geo) {
+            let input = document.getElementById('geo');
+            input.value = geo;
+        }
+    }
+
+    function popupclose() {
+        let element = document.getElementById('form-message');
+        element.style.display = 'none';
+    }
+    </script>
+    <script type="text/javascript">
+    function httpGetAsync(theUrl, callback) {
+        var xmlHttp = new XMLHttpRequest();
+        var url = theUrl + '?';
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone_number').value;
+        var purpose = document.getElementById('purpose').value;
+        var currency = document.getElementById('currency').value;
+        var amount = document.getElementById('amount').value;
+        var source = document.getElementById('source').value;
+        var geo = document.getElementById('geo').value;
+
+
+        let formdata = new FormData();
+        let temp = {};
+
+        if (name) {
+            formdata.append('Name', name);
+            temp['Name'] = name;
+        }
+
+        if (email) {
+            formdata.append('Email', email);
+            temp['Email'] = email;
+        }
+
+        if (phone) {
+            formdata.append('Phone', phone);
+            temp['Phone'] = phone
+        }
+        if (purpose) {
+            formdata.append('Purpose', purpose);
+            temp['Purpose'] = purpose;
+        }
+
+        if (currency) {
+            formdata.append('Currency', currency);
+            temp['Currency']=currency;
+        }
+
+        if (amount) {
+            formdata.append('Amount', amount);
+            temp['Amount'] = amount;
+        }
+
+        if (source) {
+            temp['Source'] = source;
+        }
+
+        if (geo) {
+
+            temp['Geo'] = geo;
+        }
+
+        let url_string = window.location.href;
+        var durl = new URL(url_string);
+        var content = durl.searchParams.get("utm_content");
+        if (content) {
+            formdata.append('Source', content);
+            temp['Source'] = content;
+        }
+        console.log(formdata.values());
+        for (let value of formdata.values()) {
+            console.log(value);
+        }
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+
+        xmlHttp.open("POST", url, true); // true for asynchronous
+        xmlHttp.setRequestHeader('Content-Type', 'application/json')
+        xmlHttp.send(JSON.stringify(temp));
+    }
+
+
+    function sendGET() {
+
+        httpGetAsync('', function(data) {
+            console.log(data);
+            let form = document.getElementById('formarea');
+            let message = document.getElementById('form-message');
+            form.style.display = 'none';
+            message.style.display = 'grid';
+        });
+        return false;
+    }
+    </script>
     <script src=js/jquery.min.js> </script> <script src=js/bootstrap.min.js> </script> <script src=js/jquery.pogo-slider.min.js> </script> <script src=js/pogo-main.js> </script> <script src=js/owl.carousel.js> </script> <script src=js/wow.min.js> </script> <script src=js/jquery.counterup.min.js> </script> <script src=js/waypoints.min.js> </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/tabs.min.js> </script> <script src=js/modernizr.js> </script> <script src="js/snap.svg.js"></script>
     <script src="js/step.js"></script>
     <script src="js/canvas.js"></script>
