@@ -1009,7 +1009,7 @@
 
     function sendGET() {
 
-        httpGetAsync('', function(data) {
+        httpGetAsync('http://localhost/currencyKart', function(data) {
             console.log(data);
             let form = document.getElementById('formarea');
             let message = document.getElementById('form-message');

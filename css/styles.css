@@ -2152,13 +2152,52 @@ blockquote i {
     background: hsla(34, 106%, 55%, 1);
 }
 
-/*.slider-content .main-content {
+.hero-section .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-row-gap: 30px;
-    align-items: center;
-}*/
+    z-index: 11;
+}
+
+.hero-section .overlay .popupText {
+    position: relative;
+    background: white;
+    color: black;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.hero-section .overlay .popupText p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero-section .overlay .close {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    justify-self: end;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .7;
+    line-height: 1.5;
+}
+
+.hero-section .overlay .close a {
+    text-decoration: none;
+}
 
 .highlight {
     color: #FDB04D;
@@ -2339,7 +2378,8 @@ input:focus~.highlight2 {
 }
 
 
-#services {
+/*second section*/
+/*#services {
     position: relative;
     text-align: center;
 }
@@ -2473,4 +2513,4 @@ svg {
     top: 0;
     width: 50px;
 }
-
+*/
