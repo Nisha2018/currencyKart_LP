@@ -2054,7 +2054,7 @@ blockquote i {
 .hero-section {
     display: grid;
     grid-template-rows: auto auto;
-    background: url("../img/bg.jpg");
+    background: url("../img/Background_image.png");
     background-size: cover;
     background-position: center;
 }
