@@ -14,6 +14,7 @@
     <link href=css/animate.css rel=stylesheet>
     <link href=css/owl.carousel.css rel=stylesheet>
     <link href=css/default.css rel=stylesheet>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href=css/styles.css rel=stylesheet>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&amp;subset=latin-ext,vietnamese" rel=stylesheet>
 </head>
@@ -24,196 +25,88 @@
             <div class=loader-icon></div>
         </div>
     </div>
-    <!-- <div class=pogoSlider id=js-main-slider>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
-        </div>
-        <div class=pogoSlider-slide style=background-image:url(img/slider/slide-4.jpg) data-d
-        uration=1000 data-transition=fade>
-            <div class=container>
-                <div class=slider-content>
-                    <div class="main-content">
-                        <div class="text">
-                            <h2 class=pogoSlider-slide-element data-delay=500 data-duration=750 data-in=slideDown data-out=slideUp>A cheaper, <span class="highlight">faster</span> way to send money abroad.</h2>
-                            <p class="pogoSlider-slide-element hidde" data-delay=900 data-duration=750 data-in=slideRight data-out=slideUp>Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
-                        </div>
-                        <div>
-                            <div class="form-area" id="formarea">
-                                <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
-                                    <div class="name">
-                                        <div>
-                                            <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="purpose" name="purpose" placeholder="Purpose*" aria-label="purpose" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="currency" name="currency" placeholder="Currency*" aria-label="currency" required="true">
-                                    </div>
-                                    <div>
-                                       <input class="form-control" type="text" id="amount" name="amount" placeholder="Amount*" aria-label="amount" required="true">
-                                    </div>
-                                    <input type="hidden" name="Source" id="source">
-                                    <input type="hidden" name="trans" id="trans">
-                                    <input type="hidden" name="Geo" id="geo">
-                                    <div>
-                                        <button type="submit" class="button">Get Started</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=pogoSlider-slide style=background-image:url(img/slider/slide-3.jpg) data-duration=1000 data-transition=fade>
-            <div class=container>
-                <div class=slider-content>
-                    <div class=row>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <h2 class=pogoSlider-slide-element data-delay=500 data-duration=750 data-in=slideDown data-out=slideUp>Make Business Easy</h2>
-                            <p class=pogoSlider-slide-element data-delay=900 data-duration=750 data-in=slideRight data-out=slideUp>Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-area" id="formarea">
-                                <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
-                                    <div class="name">
-                                        <div>
-                                            <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="units" name="units" title="Please enter number of units greater than 0" placeholder="No. of units*" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" aria-label="units" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="budget" name="Budget" title="Please enter budget in dollar($) greater than 0" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" placeholder="Budget*" aria-label="budget" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="comment" name="comment" placeholder="Any other comments" aria-label="comment">
-                                    </div>
-                                    <input type="hidden" name="Source" id="source">
-                                    <input type="hidden" name="trans" id="trans">
-                                    <input type="hidden" name="Geo" id="geo">
-                                    <div>
-                                        <button type="submit" class="button">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=pogoSlider-slide style=background-image:url(img/slider/slide-5.jpg) data-duration=1000 data-transition=fade>
-            <div class=container>
-                <div class=slider-content>
-                    <div class=row>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <h2 class=pogoSlider-slide-element data-delay=500 data-duration=750 data-in=slideDown data-out=slideUp>Courage is grace under pressure</h2>
-                            <p class=pogoSlider-slide-element data-delay=900 data-duration=750 data-in=slideRight data-out=slideUp>Join over 7 million people who get the real exchange rate with TransferWise. We’re up to 8x cheaper than banks.</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-area" id="formarea">
-                                <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
-                                    <div class="name">
-                                        <div>
-                                            <input class="form-control" type="text" id="name" name="Name" placeholder="Name*" aria-label="name" required="true">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="units" name="units" title="Please enter number of units greater than 0" placeholder="No. of units*" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" aria-label="units" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="budget" name="Budget" title="Please enter budget in dollar($) greater than 0" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" placeholder="Budget*" aria-label="budget" required="true">
-                                    </div>
-                                    <div>
-                                        <input class="form-control" type="text" id="comment" name="comment" placeholder="Any other comments" aria-label="comment">
-                                    </div>
-                                    <input type="hidden" name="Source" id="source">
-                                    <input type="hidden" name="trans" id="trans">
-                                    <input type="hidden" name="Geo" id="geo">
-                                    <div>
-                                        <button type="submit" class="button">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="hero-section">
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="info">
+                <span>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+91 9599 074 001">+91 9599 074 001</a>
+                </span>
+                <span>
+                    <i class="fas fa-envelope-open"></i>
+                    <a href="mailto:info@currencykart.com">info@currencykart.com</a>
+                </span>
+            </div>
         </div>
         <div class="container">
             <div class="content">
                 <div class="text-content">
-                    <img src="img/Banner left_illustration.png">
+                    <img src="img/banner_left.png">
                 </div>
                 <div class="form-area" id="formarea">
+                    <div class="form-text">
+                        <p>A <span class="font-bold">CHEAPER <span class="highlight">FASTER</span></span><br>
+                            WAY TO <span class="font-bold">SEND MONEY ABROAD</span></p>
+                    </div>
                     <form onsubmit="sendGET(); return false;" class="register-form" autocomplete="off" id="form">
-                        <div class="group">
-                            <input type="text" id="name" name="Name" required>
-                            <span class="highlight2"></span>
-                            <span class="bar"></span>
-                            <label>Name*</label>
+                        <div class="radio-group">
+                            <label class="radio">
+                                <input type="radio" id="personal" value="personal" name="method" checked>Personal use
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" id="business" value="business" name="method">Business
+                                <span></span>
+                            </label>
                         </div>
                         <div class="group">
-                            <input type="email" id="email" name="Email" required>
+                            <input type="text" id="name" name="Name" placeholder="Name*" required>
                             <span class="highlight2"></span>
-                            <span class="bar"></span>
-                            <label>Email*</label>
                         </div>
                         <div class="group">
-                            <input type="tel" id="phone_number" name="Phone" required>
+                            <input type="email" id="email" name="Email" placeholder="Email*" required>
                             <span class="highlight2"></span>
-                            <span class="bar"></span>
-                            <label>Contact Number*</label>
                         </div>
                         <div class="group">
-                            <input type="text" id="purpose" name="purpose" required>
+                            <input type="tel" id="phone_number" name="Phone" placeholder="Contact Number*" required>
                             <span class="highlight2"></span>
-                            <span class="bar"></span>
-                            <label>Purpose*</label>
                         </div>
                         <div class="group">
-                            <input type="text" id="currency" name="currency" required>
+                            <select id="purpose" name="purpose" required="true">
+                                <option value="">Purpose of Remittance*</option>
+                                <option value="Private visits">Private visits</option>
+                                <option value="Business visits">Business visits</option>
+                                <option value="Overseas Education">Overseas Education</option>
+                                <option value="Film shooting">Film shooting</option>
+                                <option value="Visa fees">Visa fees</option>
+                                <option value="Medical Treatment abroad.">Medical Treatment abroad.</option>
+                                <option value="Skills/credential assessment fees for intending migrants.">Skills/credential assessment fees for intending migrants.</option>
+                                <option value="Remittance by Tour Operators/ Travel Agents.">Remittance by Tour Operators/ Travel Agents.</option>
+                                <option value="Emigration and Emigration Consultancy Fees.">Emigration and Emigration Consultancy Fees.</option>
+                                <option value="Registration / Subscription / Membership fees to International Organizations.">Registration / Subscription / Membership fees to International Organizations.</option>
+                                <option value="Employment and processing, assessment fees for overseas job applications.">Employment and processing, assessment fees for overseas job applications.</option>
+                                <option value="Processing fees for registration of documents as required by the Portuguese / other Governments.">Processing fees for registration of documents as required by the Portuguese / other Governments.</option>
+                                <option value="Disbursement of crew wages.">Disbursement of crew wages.</option>
+                                <option value="Fee for participation in global conferences and specialized training or international events and competitions.">Fee for participation in global conferences and specialized training or international events and competitions.</option>
+                            </select>
                             <span class="highlight2"></span>
-                            <span class="bar"></span>
-                            <label>Currency*</label>
                         </div>
                         <div class="group">
-                            <input type="number" id="amount" name="amount" required>
+                            <input type="number" id="amount" name="amount" placeholder="Amount*" required>
                             <span class="highlight2"></span>
-                            <span class="bar"></span>
-                            <label>Amount*</label>
+                        </div>
+                        <div class="group">
+                            <input type="text" id="currency" name="currency" placeholder="Message*" required>
+                            <span class="highlight2"></span>
                         </div>
                         <input type="hidden" name="Source" id="source">
                         <input type="hidden" name="trans" id="trans">
                         <input type="hidden" name="Geo" id="geo">
                         <div>
-                            <button type="submit" class="button">Get Started</button>
+                            <button type="submit" class="button">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -231,478 +124,73 @@
     <div class=section-block id=services>
         <div class=container>
             <div class="center-holder section-heading">
-                <h2>How to send money from <span class="highlight font-bold">INR</span> to <span class="highlight font-bold">USD</span></h2>
+                <h2>Why <span class="font-bold">Transfer Money</span><br> through <span class="font-bold highlight">Currencykart.com ?</span></h2>
             </div>
-            <div class="row">
-                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUpSm;">
-                    <article class="clearfix service-article">
-                        <div class="article-icon"><i class="icon-smartphone-10"></i></div>
-                        <div class="article-text">
-                            <h3>Mobile friendly</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUpSm;">
-                    <article class="clearfix service-article">
-                        <div class="article-icon"><i class="icon-thinking-head"></i></div>
-                        <div class="article-text">
-                            <h3>Dedicated support</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUpSm;">
-                    <article class="clearfix service-article">
-                        <div class="article-icon"><i class="icon-credit-card"></i></div>
-                        <div class="article-text">
-                            <h3>Modern design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUpSm;">
-                    <article class="clearfix service-article">
-                        <div class="article-icon"><i class="icon-smartphone-10"></i></div>
-                        <div class="article-text">
-                            <h3>Mobile friendly</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUpSm;">
-                    <article class="clearfix service-article">
-                        <div class="article-icon"><i class="icon-thinking-head"></i></div>
-                        <div class="article-text">
-                            <h3>Dedicated support</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xs-12 wow col-md-4 col-sm-4 fadeInUpSm" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUpSm;">
-                    <article class="clearfix service-article">
-                        <div class="article-icon"><i class="icon-credit-card"></i></div>
-                        <div class="article-text">
-                            <h3>Modern design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!-- <div class="row">
-                <div id="svg-container">
-                    <svg id="svgC" width="100%" height="100%" viewBox="0 0 620 120" preserveAspectRatio="xMidYMid meet">
-                        <desc>Created with Snap</desc>
-                        <defs></defs>
-                        <path d="M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1" id="squiggle" fill="none" stroke="rgba(0,0,0,0.1)" strokeMiterLimit="10" strokeDashOffset="180" style="stroke-width: 1; stroke-dasharray: 5, 10; stroke-dashoffset: 10;"></path>
-                        <g transform="matrix(0.2956,-0.9553,0.9553,0.2956,43.2367,24.8965)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,557,57)"></g>
-                        <g transform="matrix(-0.8615,-0.5077,0.5077,-0.8615,577.307,92.5386)">
-                            <polyline points="0, 30, 15, 0, 30, 30" id="plane" fill="rgba(0,0,0,0.05)" style=""></polyline>
-                        </g>
-                    </svg>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="work-process">
-                        <div class="box-loader"> <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="step-num-box">
-                            <div class="step-icon"><span><i class="la la-lightbulb-o"></i></span>
-                            </div>
-                            <div class="step-num">01</div>
-                        </div>
-                        <div class="step-desc">
-                            <h4>Research Project</h4>
-                            <p class="mb-0">Nostrud exercitat ullamco lorem ipsum dolor sit amet, consece adipising elit, sed doeo eiusmod</p>
-                        </div>
+            <div class="services-content">
+                <div class="content-wrap">
+                    <div class="text">
+                        <p>Best Currency<br>
+                            Conversion Rates</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/transfer_money_section/best_currency.png">
+                    </div>
+                    <div class="tail-drip">
+                        <img src="img/transfer_money_section/tail_drip.png">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 md-mt-5">
-                    <div class="work-process">
-                        <div class="box-loader"> <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="step-num-box">
-                            <div class="step-icon"><span><i class="la la-rocket"></i></span>
-                            </div>
-                            <div class="step-num">02</div>
-                        </div>
-                        <div class="step-desc">
-                            <h4>Targeting</h4>
-                            <p class="mb-0">Nostrud exercitat ullamco lorem ipsum dolor sit amet, consece adipising elit, sed doeo eiusmod</p>
-                        </div>
+                <div class="content-wrap">
+                    <div class="text">
+                        <p>Fast and Secure<br> Money Transfer</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/transfer_money_section/fast_secure.png">
+                    </div>
+                    <div class="tail-drip">
+                        <img src="img/transfer_money_section/tail_drip.png">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 md-mt-5">
-                    <div class="work-process">
-                        <div class="step-num-box">
-                            <div class="step-icon"><span><i class="la la-check-square"></i></span>
-                            </div>
-                            <div class="step-num">03</div>
-                        </div>
-                        <div class="step-desc">
-                            <h4>Result</h4>
-                            <p class="mb-0">Nostrud exercitat ullamco lorem ipsum dolor sit amet, consece adipising elit, sed doeo eiusmod</p>
-                        </div>
+                <div class="content-wrap">
+                    <div class="text">
+                        <p>Transfer Funds in<br> 16 currencies</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/transfer_money_section/transfer_funds.png">
+                    </div>
+                    <div class="tail-drip">
+                        <img src="img/transfer_money_section/tail_drip.png">
                     </div>
                 </div>
-            </div> -->
+                <div class="content-wrap">
+                    <div class="text">
+                        <p>Easy process<br> through e-signature</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/transfer_money_section/easy_process.png">
+                    </div>
+                    <div class="tail-drip">
+                        <img src="img/transfer_money_section/tail_drip.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
     </div>
     </div>
     </div>
-    <div id=features>
+    <div id="features">
         <div class=section-block-grey>
             <div class=container>
-                <div class="center-holder section-heading">
-                    <h2>Purpose of Remittance</h2>
+                <div class="center-holder section-heading highlight">
+                    <h2 class="font-bold">Purpose of Remittance</h2>
                 </div>
                 <div class=row>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=.1s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-price-tag></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/PrivateVisits_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Private visits</p>
                             </div>
@@ -710,7 +198,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=.3s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-taking-notes></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/BusinessVisits_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Business visits</p>
                             </div>
@@ -718,7 +208,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=.5s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-stopwatch-1></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/OverseasEducation_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Overseas Education</p>
                             </div>
@@ -726,7 +218,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=.7s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Film-shooting_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Film shooting</p>
                             </div>
@@ -734,7 +228,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=.9s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Visa-_fees_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Visa fees</p>
                             </div>
@@ -742,7 +238,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.1s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Medical-Treatment-abroad_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Medical Treatment abroad.</p>
                             </div>
@@ -750,7 +248,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.2s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/11Skillscredential-assessment-fees-for-intending-migrants.png">
+                            </div>
                             <div class=box-content>
                                 <p>Skills/credential assessment fees for intending migrants.</p>
                             </div>
@@ -758,7 +258,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.3s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-scientist-avatar></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Remittance-by-Tour-Operators-TravelAgents_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Remittance by Tour Operators/ Travel Agents.</p>
                             </div>
@@ -766,7 +268,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.4s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Emigration-and-EmigrationConsultancy-Fees_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Emigration and Emigration Consultancy Fees.</p>
                             </div>
@@ -774,7 +278,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.5s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Membership-fees-to-International-Organization_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Registration / Subscription / Membership fees to International Organizations.</p>
                             </div>
@@ -782,7 +288,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.5s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Processing-fees_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Employment and processing, assessment fees for overseas job applications.</p>
                             </div>
@@ -790,7 +298,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.5s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Membership-fees-to-International-Organization_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Processing fees for registration of documents as required by the Portuguese / other Governments.</p>
                             </div>
@@ -798,7 +308,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.5s>
                         <div class="service-box wages">
-                            <div class=box-icon><i class=icon-smartphone-6></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Disbursement-of-crew-wages_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Disbursement of crew wages.</p>
                             </div>
@@ -806,7 +318,9 @@
                     </div>
                     <div class="col-xs-12 col-md-4 wow fadeIn" data-wow-delay=1.5s>
                         <div class="service-box">
-                            <div class=box-icon><i class=icon-thinking-head></i></div>
+                            <div class=box-icon>
+                                <img src="img/purpose_of_remittance_icons/Global-conferences_icon.png">
+                            </div>
                             <div class=box-content>
                                 <p>Fee for participation in global conferences and specialized training or international events and competitions.</p>
                             </div>
@@ -816,89 +330,32 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!--  <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-3 col-sm-12">
-                        <div class="footer-column-1"><img alt="footer-logo" src="img/logos/logo-2.png">
-                            <div class="text-content mt-25">
-                                <p class="grey-color">Lorem ipsum dolor sit amet, ad per sint graece, vix quod nusquam ea.</p>
-                                <div class="white-color mt-20">
-                                    <p><i class="fa fa-envelope-o"></i> E-mail: example@mail.com</p>
-                                    <p><i class="fa fa-phone"></i> Phone: +1-23-456789</p>
-                                    <p><i class="fa fa-clock-o"></i> Time: Tus-Mon : 9:00am-6:00pm</p>
-                                    <p><i class="fa fa-map-marker"></i> Map: Sheram 113</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-3 col-sm-12 col-md-offset-1">
-                        <div class="footer-column-heading">
-                            <h6>Recent Posts</h6>
-                        </div>
-                        <div class="clearfix footer-post">
-                            <div class="footer-post-img"><img alt="post-img" src="img/content/footer-post-1.jpg"></div>
-                            <div class="footer-post-content">
-                                <h6><a href="blog-post.html">Lorem ipsum dolor sit amet, ad per sint graece</a></h6>
-                            </div>
-                        </div>
-                        <div class="clearfix footer-post">
-                            <div class="footer-post-img"><img alt="post-img" src="img/content/footer-post-2.jpg"></div>
-                            <div class="footer-post-content">
-                                <h6><a href="blog-post.html">Lorem ipsum dolor sit amet, ad per sint graece</a></h6>
-                            </div>
-                        </div>
-                        <div class="clearfix footer-post">
-                            <div class="footer-post-img"><img alt="post-img" src="img/content/footer-post-3.jpg"></div>
-                            <div class="footer-post-content">
-                                <h6><a href="blog-post.html">Lorem ipsum dolor sit amet, ad per sint graece</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-2">
-                        <div class="footer-column-heading">
-                            <h6>Links</h6>
-                        </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-md-3 col-sm-12">
-                        <div class="footer-column-heading">
-                            <h6>Newsletter</h6>
-                        </div>
-                        <div class="input-group newsletter-form"><input placeholder="Your Email" type="email"> <span class="input-group-btn"><button class="btn btn-default" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button></span></div>
-                    </div>
-                </div>
+    <div class="section-block" id="choose-us">
+        <div class="container choose-us-wrapper">
+            <div class="center-holder section-heading">
+                <h2>Why choose<span class="font-bold"> CurrencyKart</span><br> for <span class="font-bold highlight">money Transfer</span> from India</h2>
+            </div>
+            <div class="sub-title">
+                <p>Apart from security and swift offerings, there are other unavoidable<br> <span class="font-bold">reasons to choose CurrencyKart for sending money abroad!</span> Here’s a quick tour.</p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Trusted institution for international money transfer</li>
+                    <li>Unbeatable and competitive currency exchange rates *</li>
+                    <li>No commission charges</li>
+                    <li>Comparative study of rates or quotes</li>
+                    <li>Transfer in multiple currencies at a single time</li>
+                    <li>No fluctuated forex rate</li>
+                    <li>Direct credit to the beneficiary within 48 hours</li>
+                    <li>KYC document door pick-up facility</li>
+                    <li>Discuss with the industry experts for a better understanding</li>
+                </ul>
+            </div>
+            <div class="note">
+                <p>What’s more? We provide each of the services with a wide smile and transparent approach.</p>
             </div>
         </div>
-        <div class="bottom-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 col-sm-6">
-                        <div class="white-color bottom-icons"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-sm-6">
-                        <div class="grey-color mt-10 right-holder">
-                            <p>© Copyright 2017 SpecThemes. All Rights reserved</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-
+    </div>
     <script type="text/javascript">
     var x = '';
 
@@ -967,7 +424,7 @@
 
         if (currency) {
             formdata.append('Currency', currency);
-            temp['Currency']=currency;
+            temp['Currency'] = currency;
         }
 
         if (amount) {
