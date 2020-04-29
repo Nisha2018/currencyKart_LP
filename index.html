@@ -7,6 +7,8 @@
     <link href=img/logos/logo-shortcut.png rel="shortcut icon">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
     <link href=css/bootstrap.min.css rel=stylesheet>
+    <link href="pidie-0.0.8.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/currency.css">
     <link href=css/font-awesome.css rel=stylesheet>
     <link href=css/icomoon.css rel=stylesheet>
     <link href=css/pogo-slider.min.css rel=stylesheet>
@@ -72,6 +74,7 @@
                         </div>
                         <div class="group">
                             <input type="tel" id="phone_number" name="Phone" placeholder="Contact Number*" required>
+                            <button id="otp">send OTP</button>
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
@@ -95,7 +98,10 @@
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
-                            <input type="number" id="amount" name="amount" placeholder="Amount*" required>
+                            <div class="pd-flag-select">
+                                <select class="pd-currencies pd"></select>
+                            </div>
+                            <input type="number" id="amount" name="amount" placeholder="Invoice Amount*" required>
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
@@ -330,7 +336,96 @@
             </div>
         </div>
     </div>
-    <div class="section-block" id="choose-us">
+    <div id="choose-us">
+        <div class=section-block-grey>
+            <div class="container choose-us-wrapper">
+                <div class="center-holder section-heading highlight">
+                    <h2>Why choose<span class="font-bold highlight"> CurrencyKart</span><br> for <span class="font-bold highlight">money Transfer</span> from India</h2>
+                </div>
+                <div class="sub-title">
+                    <p>Apart from security and swift offerings, there are other unavoidable <span class="font-bold">reasons to choose CurrencyKart for sending money abroad!</span><br> Here’s a quick tour.</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 fadeIn" data-wow-delay=".1s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>Trusted institution for international money transfer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay=".3s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>Unbeatable and competitive currency exchange rates *</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay=".5s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>No commission charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay="1.1s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>Comparative study of rates or quotes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay=".7s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>Transfer in multiple currencies at a single time</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay="1.1s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>No fluctuated forex rates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay="1.1s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>Direct credit to the beneficiary within 48 hours*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay="1.1s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>KYC document door pick-up facility</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 fadeIn" data-wow-delay="1.1s">
+                        <div class="service-box">
+                            <div class="box-content">
+                                <div class="icon"><i class="far fa-check-circle"></i></div>
+                                <p>Discuss with the industry experts for a better understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="note">
+                    <p>What’s more? We provide each of the services with a wide smile and transparent approach.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section-block" id="choose-us">
         <div class="container choose-us-wrapper">
             <div class="center-holder section-heading">
                 <h2>Why choose<span class="font-bold"> CurrencyKart</span><br> for <span class="font-bold highlight">money Transfer</span> from India</h2>
@@ -355,7 +450,7 @@
                 <p>What’s more? We provide each of the services with a wide smile and transparent approach.</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <script type="text/javascript">
     var x = '';
 
@@ -475,7 +570,11 @@
         return false;
     }
     </script>
-    <script src=js/jquery.min.js> </script> <script src=js/bootstrap.min.js> </script> <script src=js/jquery.pogo-slider.min.js> </script> <script src=js/pogo-main.js> </script> <script src=js/owl.carousel.js> </script> <script src=js/wow.min.js> </script> <script src=js/jquery.counterup.min.js> </script> <script src=js/waypoints.min.js> </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/tabs.min.js> </script> <script src=js/modernizr.js> </script> <script src="js/snap.svg.js"></script>
-    <script src="js/step.js"></script>
-    <script src="js/canvas.js"></script>
-    <script src=js/map.js> </script> <script src=js/main.js> </script> </body> </html>
+    <script src=js/jquery.min.js> </script> <script src=js/bootstrap.min.js> </script> <script src=js/jquery.pogo-slider.min.js> </script> <script src=js/pogo-main.js> </script> <script src=js/owl.carousel.js> </script> <script src=js/wow.min.js> </script> <script src=js/jquery.counterup.min.js> </script> <script src=js/waypoints.min.js> </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/tabs.min.js> </script> <script src=js/modernizr.js> </script>
+    <script src="js/pidie-0.0.8.js"></script>
+    <script src=js/map.js> </script> <script src=js/main.js> </script> 
+    <script>
+        var pidie = new Pidie();
+    </script>
+</body>
+</html>

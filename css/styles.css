@@ -736,6 +736,10 @@
     filter: invert(100%) sepia(66%) saturate(0%) hue-rotate(232deg) brightness(108%) contrast(101%);
 }
 
+#choose-us .service-box:hover .box-content .icon i{
+    color: #fff;
+}
+
 .box-content h5,
 .box-content p {
     margin-left: 15px;
@@ -774,6 +778,19 @@
     letter-spacing: 1.5px;
     margin: 0;
     text-align: center;
+}
+
+#choose-us .box-content p{
+    text-align: left;
+}
+
+#choose-us .service-box {
+    justify-content: start;
+}
+
+#choose-us .section-block-grey{
+    padding-top: 50px;
+    background: #f9f9f9;
 }
 
 .service-category-list {
@@ -2129,13 +2146,12 @@ blockquote i {
     text-align: left;
 }
 
-.form-area {
+.form-area form{
     display: grid;
-    display: grid;
-    /*background: #008f47;*/
-    /*box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.1);*/
+    background: #008f47;
+    box-shadow: 10px 10px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.1);
     border-radius: 50px;
-    /*padding: 30px;*/
+    padding: 30px;
 }
 
 .form-area form {
@@ -2168,6 +2184,11 @@ input::-webkit-input-placeholder {
     /*font-weight: bold;*/
 }
 
+.form-area{
+    display: grid;
+    grid-row-gap: 12px;
+}
+
 .form-area form button {
     background: #FDB04D;
     padding: 9px 12px;
@@ -2180,10 +2201,39 @@ input::-webkit-input-placeholder {
     height: 40px;
     font-weight: bold;
     transition: all 0.5s ease-in;
+    border-radius: 50px;
+    margin-top: 10px;
 }
 
 .form-area form button:hover {
     background: hsla(34, 106%, 55%, 1);
+}
+
+.form-area #otp{
+    position: absolute;
+    top: -11px;
+    right: 0;
+    padding: 5px 10px;
+    width: auto;
+    font-size: 12px;
+    height: auto;
+    text-transform: none;
+    letter-spacing: 1px;
+    border-radius: 15px;
+}
+
+ .pd-flag-selected{
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 1px solid #fff;
+    padding-left: 8px;
+    font-family: Nunito,sans-serif;
+    font-size: 16px;
+}
+
+ .pd-flag-items{
+    background: #fff;
+    color: #333;
 }
 
 .hero-section .overlay {
@@ -2256,7 +2306,7 @@ input::-webkit-input-placeholder {
 
 .services-content .text p {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -2271,7 +2321,7 @@ input::-webkit-input-placeholder {
 
 .choose-us-wrapper {
     display: grid;
-    grid-row-gap: 10px;
+    grid-row-gap: 40px;
 }
 
 #choose-us .section-heading {
@@ -2280,7 +2330,8 @@ input::-webkit-input-placeholder {
 
 #choose-us .sub-title,
 #choose-us .list ul li {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
 }
 
 #choose-us .list ul {
@@ -2294,6 +2345,21 @@ input::-webkit-input-placeholder {
 
 #choose-us .note {
     margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#choose-us .box-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+#choose-us .box-content .icon i{
+    color: #18ba60;
+    font-size: 25px;
 }
 
 .highlight {
@@ -2370,6 +2436,9 @@ input::-webkit-input-placeholder {
     .form-area form {
         width: 65%;
         justify-self: end;
+        margin-left: 35%;
+        padding: 30px 30px 15px;
+        grid-row-gap: 8px;
     }
 
     .form-text{
@@ -2393,9 +2462,15 @@ select {
     padding: 8px 10px 5px;
     display: block;
     width: 100%;
-    border: 1px solid #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
     background: transparent;
     color: #fff;
+    outline: none;
+}
+
+select{
+    padding-left: 6px;
 }
 
 select option {
@@ -2403,7 +2478,7 @@ select option {
     font-size: 16px;
 }
 
-input:focus,
+input:focus,select:focus,
 input:active {
     outline: none;
     border-color: #FDB04D;
