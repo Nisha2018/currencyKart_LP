@@ -19,7 +19,8 @@ class Pidie {
 
   countries() {
     return [
-      { id: 'AF', name: 'Afghanistan', currency_code: 'AFN', currency_name: 'Afghani', phone: '+93', language_code: 'ps', language_name: 'پښتو', demonym: 'Afghan' }, 
+      { id: 'AF', name: 'Afghanistan', currency_code: 'AFN', currency_name: 'Afghani', phone: '+93', language_code: 'ps', language_name: 'پښتو', demonym: 'Afghan' },
+      { id: 'AE', name: 'Arab Emirates', currency_code: 'AED', currency_name: 'Arab Emirates Dirham',phone: '', language_code: '', language_name: '', demonym: ''}, 
       { id: 'AL', name: 'Albania', currency_code: 'ALL', currency_name: 'Lek', phone: '+355', language_code: 'sq', language_name: 'Shqip', demonym: 'Albanian' }, 
       { id: 'DZ', name: 'Algeria', currency_code: 'DZD', currency_name: 'Dinar', phone: '+213', language_code: 'ar', language_name: 'العربية', demonym: 'Algerian' }, 
       { id: 'AD', name: 'Andorra', currency_code: 'EUR', currency_name: 'Euro', phone: '+376', language_code: 'ca', language_name: 'Català', demonym: 'Andorran' }, 
@@ -32,7 +33,7 @@ class Pidie {
       { id: 'AZ', name: 'Azerbaijan', currency_code: 'AZN', currency_name: 'Manat', phone: '+994', language_code: 'az', language_name: 'Azərbaycan dili', demonym: 'Azerbaijani' }, 
       { id: 'BS', name: 'The Bahamas', currency_code: 'BSD', currency_name: 'Dollar', phone: '+1242', language_code: 'en', language_name: 'English', demonym: 'Bahamian' }, 
       { id: 'BH', name: 'Bahrain', currency_code: 'BHD', currency_name: 'Dinar', phone: '+973', language_code: 'ar', language_name: 'العربية', demonym: 'Bahraini' }, 
-      { id: 'BD', name: 'Bangladesh', currency_code: 'BDT', currency_name: 'Taka', phone: '+880', language_code: 'bn', language_name: 'বাংলা', demonym: 'Bengali' }, 
+      { id: 'BD', name: 'Bangladesh', currency_code: 'BDT', currency_name: 'BANGLADESHI TAKA', phone: '+880', language_code: 'bn', language_name: 'বাংলা', demonym: '' }, 
       { id: 'BB', name: 'Barbados', currency_code: 'BBD', currency_name: 'Dollar', phone: '+1246', language_code: 'en', language_name: 'English', demonym: 'Barbadian' }, 
       { id: 'BY', name: 'Belarus', currency_code: 'BYR', currency_name: 'Ruble', phone: '+375', language_code: 'be', language_name: 'беларуская мова', demonym: 'Belarusian' }, 
       { id: 'BE', name: 'Belgium', currency_code: 'EUR', currency_name: 'Euro', phone: '+32', language_code: 'nl', language_name: 'Flemish', demonym: 'Belgian' }, 
@@ -44,6 +45,7 @@ class Pidie {
       { id: 'BW', name: 'Botswana', currency_code: 'BWP', currency_name: 'Pula', phone: '+267', language_code: 'en', language_name: 'English', demonym: 'Batswana' }, 
       { id: 'BR', name: 'Brazil', currency_code: 'BRL', currency_name: 'Real', phone: '+55', language_code: 'pt', language_name: 'Português', demonym: 'Brazilian' }, 
       { id: 'BN', name: 'Brunei', currency_code: 'BND', currency_name: 'Dollar', phone: '+673', language_code: 'ms', language_name: 'Bahasa Melayu', demonym: 'Bruneian' }, 
+      { id: 'GB', name: 'United Kingdom', currency_code: 'GBP', currency_name: 'British Pound', phone: '', language_code: '', language_name: '', demonym: '' },
       { id: 'BG', name: 'Bulgaria', currency_code: 'BGN', currency_name: 'Lev', phone: '+359', language_code: 'bg', language_name: 'български език', demonym: 'Bulgarian' }, 
       { id: 'BF', name: 'Burkina Faso', currency_code: 'XOF', currency_name: 'West Africa Franc', phone: '+226', language_code: 'fr', language_name: 'Français', demonym: 'Burkinabe' }, 
       { id: 'BI', name: 'Burundi', currency_code: 'BIF', currency_name: 'Franc', phone: '+257', language_code: 'fr', language_name: 'Français', demonym: 'Burundian' }, 
@@ -91,7 +93,8 @@ class Pidie {
       { id: 'GW', name: 'Guinea-Bissau', currency_code: 'XOF', currency_name: 'West African Franc', phone: '+245', language_code: 'pt', language_name: 'Português', demonym: 'Bissau-Guinean' }, 
       { id: 'GY', name: 'Guyana', currency_code: 'GYD', currency_name: 'Dollar', phone: '+592', language_code: 'en', language_name: 'English', demonym: 'Guyanese' }, 
       { id: 'HT', name: 'Haiti', currency_code: '', currency_name: 'Gourde', phone: '+509', language_code: 'fr', language_name: 'Français', demonym: 'Haitian' }, 
-      { id: 'HN', name: 'Honduras', currency_code: 'HNL', currency_name: 'Lempira', phone: '+504', language_code: 'es', language_name: 'Español', demonym: 'Honduran' }, 
+      { id: 'HN', name: 'Honduras', currency_code: 'HNL', currency_name: 'Lempira', phone: '+504', language_code: 'es', language_name: 'Español', demonym: 'Honduran' },
+      { id: 'HK', name: 'Hong Kong', currency_code: 'HKD', currency_name: 'HONG KONG DOLLAR', phone: '', language_code: '', language_name: '', demonym: '' }, 
       { id: 'HU', name: 'Hungary', currency_code: 'HUF', currency_name: 'Forint', phone: '+36', language_code: 'hu', language_name: 'Magyar', demonym: 'Hungarian' }, 
       { id: 'IS', name: 'Iceland', currency_code: 'ISK', currency_name: 'Króna', phone: '+354', language_code: 'is', language_name: 'íslenska', demonym: 'Icelandic' }, 
       { id: 'IN', name: 'India', currency_code: 'INR', currency_name: 'Rupee', phone: '+91', language_code: 'hi', language_name: 'हिन्दी', demonym: 'Indian' }, 
@@ -109,7 +112,6 @@ class Pidie {
       { id: 'KE', name: 'Kenya', currency_code: 'KES', currency_name: 'Shilling', phone: '+254', language_code: 'en', language_name: 'English', demonym: 'Kenyan' },
       { id: 'KI', name: 'Kiribati', currency_code: 'AUD', currency_name: 'Australian Dollar', phone: '+686', language_code: 'en', language_name: 'English', demonym: 'Kiribati' },
       { id: 'KP', name: 'North Korea', currency_code: 'KPW', currency_name: 'Won', phone: '+850', language_code: 'ko', language_name: '조선어', demonym: 'North Korean' },
-      { id: 'KR', name: 'South Korea', currency_code: 'KRW', currency_name: 'Won', phone: '+82', language_code: 'ko', language_name: '한국어', demonym: 'South Korean' },
       { id: 'KW', name: 'Kuwait', currency_code: 'KWD', currency_name: 'Dinar', phone: '+965', language_code: 'ar', language_name: 'العربية', demonym: 'Kuwaiti' },
       { id: 'KG', name: 'Kyrgyzstan', currency_code: 'KGS', currency_name: 'Som', phone: '+996', language_code: '	ky', language_name: 'Kyrgyz', demonym: 'Kyrgyz' },
       { id: 'LA', name: 'Laos', currency_code: 'LAK', currency_name: 'Kip', phone: '+856', language_code: 'lo', language_name: 'ພາສາລາວ', demonym: 'Laotian' },
@@ -121,9 +123,37 @@ class Pidie {
       { id: 'LI', name: 'Liechtenstein', currency_code: 'CHF', currency_name: 'Swiss Franc', phone: '+423', language_code: 'de', language_name: 'Deutsch', demonym: 'Liechtenstein' },
       { id: 'LT', name: 'Lithuania', currency_code: 'EUR', currency_name: 'Euro', phone: '+370', language_code: 'lt', language_name: 'Lietuvių kalba', demonym: 'Lithuanian' },
       { id: 'LU', name: 'Luxembourg', currency_code: 'EUR', currency_name: 'Euro', phone: '+352', language_code: 'lb', language_name: 'Lëtzebuergesch', demonym: 'Luxembourg' },
-      /*{ id: '', name: '', currency_code: '', currency_name: '', phone: '', language_code: '', language_name: '', demonym: '' }*/
-    ];
-  }
+      { id: 'MC', name: 'Macau', currency_code: 'MOP', currency_name: 'Macanese Pataca', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'MU', name: 'Mauritius', currency_code: 'MUR', currency_name: 'MAURITIAN RUPEE', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'MX', name: 'Mexico', currency_code: 'MXN', currency_name: 'Mexican Peso', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'MY', name: 'Malaysia', currency_code: 'MYR', currency_name: 'MALAYSIAN RINGGIT', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'NO', name: 'Norway', currency_code: 'NOK', currency_name: 'NORWEGIAN KRONE', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'NP', name: 'Nepal', currency_code: 'NPR', currency_name: 'NEPALESE RUPEE', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'NZ', name: 'New Zealand', currency_code: 'NZD', currency_name: 'NEWZEALAND DOLLAR', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'OM', name: 'Oman', currency_code: 'OMR', currency_name: 'Omani Rial', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'PG', name: 'Papua New Guinea', currency_code: 'PGK', currency_name: 'PAPUA NEW GUINEAN KINA', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'PK', name: 'Pakistan', currency_code: 'PKR', currency_name: 'PAKISTANI RUPEE', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'PH', name: 'Philippines', currency_code: 'PHP', currency_name: 'PHILIPPINE PESO', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'PL', name: 'Poland', currency_code: 'PLN', currency_name: 'PLN, POLISH ZLOTY', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'QA', name: 'Qatar', currency_code: 'QAR', currency_name: 'Qatari Riyal', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'RO', name: 'Romania', currency_code: 'RON', currency_name: 'ROMANIAN NEW LEU', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'RU', name: 'Russian Federation', currency_code: 'RUB', currency_name: 'Russian Ruble', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'SA', name: 'Saudi Arabia', currency_code: 'SAR', currency_name: 'SAUDI RIYAL', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'KR', name: 'South Korea', currency_code: 'KRW', currency_name: 'Won', phone: '+82', language_code: 'ko', language_name: '한국어', demonym: 'South Korean' },
+      { id: 'ZA', name: 'South Africa', currency_code: 'ZAR', currency_name: 'SOUTH AFRICAN RAND', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'SE', name: 'Sweden', currency_code: 'SEK', currency_name: 'SWEDISH KRONA', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'SG', name: 'Singapore', currency_code: 'SGD', currency_name: 'SINGAPORE DOLLAR', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'LK', name: 'SRI LANKA', currency_code: 'LKR', currency_name: 'SRI LANKA RUPEE', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'CH', name: 'Switzerland', currency_code: 'CHF', currency_name: 'SWISS FRANC', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'SY', name: 'Syria', currency_code: 'SYP', currency_name: 'SYRIA POUND', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'TH', name: 'Thailand', currency_code: 'THB', currency_name: 'THAI BAHT', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'TR', name: 'Turkey', currency_code: 'TRY', currency_name: 'TURKISH LIRA', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'TW', name: 'Taiwan, Republic of China', currency_code: 'TWD', currency_name: 'NEW TAIWAN DOLLAR', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'US', name: 'United States', currency_code: 'USD', currency_name: 'DOLLAR', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'VE', name: 'Venezuela', currency_code: 'VEF', currency_name: 'VENEZUELAN BOLIVAR', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'VN', name: 'Vietnam', currency_code: 'VND', currency_name: 'VIETNAMESE DONG', phone: '', language_code: '', language_name: '', demonym: '' },
+      { id: 'YE', name: 'Yemen', currency_code: 'YER', currency_name: 'YEMENI RIAL', phone: '', language_code: '', language_name: '', demonym: '' }
+  ]}
 
   // methods v0.0.8
 
@@ -220,7 +250,7 @@ class Pidie {
     })
     Array.prototype.forEach.call(document.querySelectorAll('.pd-currencies'), function(elem){
       var addCountry = '';
-      addCountry += '<option value="">Select currencies:</option>';
+      addCountry += '<option value="">Select Currency</option>';
       flagCountry.forEach(function(res){
         addCountry += '<option data-value="'+res.id+'" value="'+res.currency_code+'">'+res.demonym+' '+res.currency_name+' ('+res.currency_code+')</option>';
       })
