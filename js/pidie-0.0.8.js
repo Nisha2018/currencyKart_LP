@@ -343,7 +343,7 @@ class Pidie {
         }
       }
     }
-    //document.addEventListener("click", closeAllSelect); 
+    document.addEventListener("click", closeAllSelect); 
   }
   toggleSwitch() {
     Array.prototype.forEach.call(document.querySelectorAll('.pd-toggle-switch'), function(elem){
