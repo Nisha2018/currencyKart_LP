@@ -72,8 +72,9 @@
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
-                            <input type="tel" id="phone_number" name="Phone" placeholder="Contact Number*" required>
-                            <button id="otp">Send OTP</button>
+                            <input type="tel" id="phone_number" name="Phone" placeholder="Mobile Number*" required>
+                            <button id="otp_btn">Send OTP</button>
+                            <input type="number" name="otpInput" id="otp-input" placeholder="Please enter OTP" required="true">
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
@@ -97,14 +98,14 @@
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
-                            <div class="pd-flag-select">
-                                <select class="pd-currencies pd"></select>
+                            <div class="pd-flag-select pd-search-select">
+                                <select class="pd-currencies"></select>
                             </div>
-                            <input type="number" id="amount" name="amount" placeholder="Invoice Amount*" required>
+                            <input type="number" id="amount" name="amount" placeholder="As Per Invoice or College Offer Letter*" required>
                             <span class="highlight2"></span>
                         </div>
                         <div class="group">
-                            <input type="text" id="message" name="message" placeholder="Message*" required>
+                            <input type="text" id="message" name="message" placeholder="Remarks">
                             <span class="highlight2"></span>
                         </div>
                         <input type="hidden" name="Source" id="source">
@@ -427,32 +428,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="section-block" id="choose-us">
-        <div class="container choose-us-wrapper">
-            <div class="center-holder section-heading">
-                <h2>Why choose<span class="font-bold"> CurrencyKart</span><br> for <span class="font-bold highlight">money Transfer</span> from India</h2>
-            </div>
-            <div class="sub-title">
-                <p>Apart from security and swift offerings, there are other unavoidable<br> <span class="font-bold">reasons to choose CurrencyKart for sending money abroad!</span> Here’s a quick tour.</p>
-            </div>
-            <div class="list">
-                <ul>
-                    <li>Trusted institution for international money transfer</li>
-                    <li>Unbeatable and competitive currency exchange rates *</li>
-                    <li>No commission charges</li>
-                    <li>Comparative study of rates or quotes</li>
-                    <li>Transfer in multiple currencies at a single time</li>
-                    <li>No fluctuated forex rate</li>
-                    <li>Direct credit to the beneficiary within 48 hours</li>
-                    <li>KYC document door pick-up facility</li>
-                    <li>Discuss with the industry experts for a better understanding</li>
-                </ul>
-            </div>
-            <div class="note">
-                <p>What’s more? We provide each of the services with a wide smile and transparent approach.</p>
-            </div>
-        </div>
-    </div> -->
+    
     <script type="text/javascript">
     var x = '';
 
@@ -573,7 +549,9 @@
     }
     </script>
     <script src=js/jquery.min.js> </script> <script src=js/bootstrap.min.js> </script> <script src=js/jquery.pogo-slider.min.js> </script> <script src=js/pogo-main.js> </script> <script src=js/owl.carousel.js> </script> <script src=js/wow.min.js> </script> <script src=js/jquery.counterup.min.js> </script> <script src=js/waypoints.min.js> </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/tabs.min.js> </script> <script src=js/modernizr.js> </script> <script src="js/pidie-0.0.8.js"></script>
-    <script src=js/map.js> </script> <script src=js/main.js> </script> <script>
+    <script src=js/map.js> </script> <script src=js/main.js> </script>
+    <script src=js/currencykart.js> </script>
+     <script>
     var pidie = new Pidie();
     </script>
 </body>

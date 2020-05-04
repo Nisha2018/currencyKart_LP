@@ -2209,7 +2209,7 @@ input::-webkit-input-placeholder {
     background: hsla(34, 106%, 55%, 1);
 }
 
-.form-area #otp{
+.form-area #otp_btn{
     position: absolute;
     top: -11px;
     right: 0;
@@ -2234,6 +2234,25 @@ input::-webkit-input-placeholder {
  .pd-flag-items{
     background: #fff;
     color: #333;
+}
+
+.pd-search-select input[type="search"]{
+    background-color: #008f4726;
+    color: #333;
+}
+
+.pd-search-select input[type="search"]::-webkit-input-placeholder,
+input[name="otpInput"]::-webkit-input-placeholder{
+    color: #868383;
+}
+
+#otp-input{
+    background: #fff;
+    color: #333;
+    /*position: absolute;
+    top: 0;*/
+    display: none;
+    pointer-events: none;
 }
 
 .hero-section .overlay {
@@ -2426,7 +2445,8 @@ input::-webkit-input-placeholder {
 @media (min-width: 992px) {
 
     .hero-section {
-        height: 100vh;
+        /*height: 100vh;*/
+        padding-bottom: 50px;
     }
 
     .hero-section .content {
